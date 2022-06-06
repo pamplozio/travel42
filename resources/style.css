@@ -1,0 +1,332 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+main {
+    margin-top: 1.875rem;
+}
+
+header {
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    height: 9.375rem;
+    opacity: 1;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+
+header h1 {
+    height: 1.25rem;
+    margin-bottom: 0rem;
+}
+
+header p {
+    font-family: "Dancing Script", sans-serif;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /*this make the nav point spread with even space */
+    font-weight: bold;
+}
+
+
+header a {
+    color: black;
+    text-underline-offset: .25rem;
+}
+
+nav {
+    margin-right: 6.875rem;
+}
+
+.title {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.small-dot,
+.large-dot {
+    font-size: 3.125rem;
+}
+
+
+.background-pic {
+    background-image: url("./images/londonBackground.jpg.jpeg");
+    background-position: center;
+    
+    background-size: cover;
+    /*by removing the width you make shrink the background picture*/
+    width: 100%;
+    height: 15.625rem;
+    margin: auto;
+    display: flex;
+    
+    
+}
+
+
+.central-message {
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: double black;
+    margin: auto;
+    height: 5rem;
+    width: 28rem; 
+    
+}
+
+.central-message h2 {
+    height: 0.9rem;
+    /*to make the text central inside the container*/
+    margin-top: 0.625rem;
+    margin-bottom: 0%;
+}
+
+/*Latest idea section*/
+
+.team-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.team-container {
+    padding-top: 2rem;
+    
+}
+
+.team-container h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.sunrise-in-j,
+.ice-bbq,
+.zingaro-hiking {
+    width: 18.75rem;
+    height: 12.75rem;
+    border: 0.0625rem solid black;
+    border-spacing: 2.5rem;
+}
+
+.family-pics {
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.left-pic h3,
+.central-pic h3,
+.right-pic h3 {
+    text-align: center;   
+}
+
+.dolomite-pic {
+    width: 11.75rem;
+    height: 12.75rem;
+    border: 0.0625rem solid black;
+    border-spacing: 2.5rem;
+    margin-left: 1.5625rem;
+}
+
+.ondine-pic,
+.kenwood-pic,
+.nika-pic,
+.amsterdam-pic {
+    width: 18.75rem;
+    height: 12.75rem;
+    border: 0.0625rem solid black;
+    border-spacing: 2.5rem;
+}
+
+.top-destinations {
+    margin-top: 3.875rem;
+}
+
+.top-destinations h2 {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+#destinations-h2 {
+    line-height: 50px;/*center h2 inside its background*/
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: 15.625rem 15.625rem;
+    grid-template-rows: repeat(2, 15.625rem);
+    gap: 6.25rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 6.25rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+.destinations h4 {
+    text-align: center;
+}
+
+
+.ondine h4 {
+    padding-bottom: .1875rem;
+}
+
+.destinations a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.amsterdam-lights {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5.625rem;
+}
+
+.amsterdam-lights a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 59rem) {
+    .family-pics {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .central-message{
+        margin-top: .625rem;
+        width: 25rem;
+    }
+
+    #destinations {
+        margin-left: 30px;
+    }
+
+    #about-us {
+        margin-left: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 43.4375rem) {
+    .destinations {
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-areas: "ondine"
+                             "dolomite"
+                             "kenwood"
+                             "nika";
+        grid-template-columns: 7.625rem;
+        grid-template-rows: 18.125rem 19.375rem 19.375rem 18.125rem;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .destinations h4 {
+        text-align: center;
+    }
+
+    .dolomite-pic {
+        margin-right: 1.875rem;
+    }
+
+    #about-us {
+        margin-left: .625rem;
+    }
+
+    #destinations {
+        margin-left: .625rem;
+    }
+}
+
+@media only screen and (max-width: 40.625rem) {
+    
+    #destinations {
+        margin-left: 1.875rem;
+    }
+
+    #about-us {
+        margin-left: 1.875rem;
+    }
+}
+
+@media only screen and (max-width: 38.75rem) {
+
+    nav {
+        width: max-content;
+    }
+
+    #destinations {
+        margin-left: 70px;
+    }
+
+    #about-us {
+        margin-left: 70px;
+    }
+
+}
+
+
+@media only screen and (max-width: 37.5rem) {
+
+    .central-message {
+        background-color: transparent;
+        color:aliceblue ;
+        border: transparent;
+    }
+
+    header {
+        height: 6.25rem;
+    }
+
+    .central-pic {
+        margin-top: 3.125rem;
+    }
+
+    .right-pic {
+        margin-top: 3.125rem;
+    }
+    
+    nav {
+        position: absolute;
+        top: 0%;
+        padding-right: 200px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

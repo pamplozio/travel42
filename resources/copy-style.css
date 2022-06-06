@@ -1,0 +1,11 @@
+.destinations {
+    display: grid;
+    grid-template-columns: 15.625rem 15.625rem;
+    grid-template-rows: repeat(2, 15.625rem);
+    
+    gap: 6.25rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 3.25rem;
+    justify-items: center;
+    justify-content: center;
+}
