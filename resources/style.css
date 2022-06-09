@@ -14,7 +14,9 @@ header {
     opacity: 1;
     margin-top: 0px;
     padding-top: 0px;
-    
+    top: 0%;
+    background-color: white;
+    z-index: 200;
 }
 
 header h1 {
@@ -26,21 +28,23 @@ header p {
     font-family: "Dancing Script", sans-serif;
 }
 
-header ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around; /*this make the nav point spread with even space */
+
+
+.list-of-a {
+    
+    text-underline-offset: .25rem;
     font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
-
-header a {
+.list-of-a a {
     color: black;
-    text-underline-offset: .25rem;
 }
 
 nav {
-    margin-right: 6.875rem;
+    margin-right: 5.475rem;
 }
 
 .title {
@@ -114,7 +118,7 @@ nav {
     border-spacing: 2.5rem;
 }
 
-.family-pics {
+.l-idea-pics {
     display: flex;
     justify-content: space-around;
     
@@ -203,7 +207,7 @@ footer {
 }
 
 @media only screen and (max-width: 59rem) {
-    .family-pics {
+    .l-idea-pics {
         display: flex;
         flex-wrap: wrap;
     }
@@ -254,31 +258,21 @@ footer {
     }
 }
 
-@media only screen and (max-width: 40.625rem) {
-    
-    #destinations {
-        margin-left: 1.875rem;
+
+
+@media only screen and (max-width: 39.125rem) {
+
+    .list-of-a {
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 80px;
+        font-size: small;
+        
     }
 
-    #about-us {
-        margin-left: 1.875rem;
+    .list-of-a a {
+        text-decoration: none;
     }
-}
-
-@media only screen and (max-width: 38.75rem) {
-
-    nav {
-        width: max-content;
-    }
-
-    #destinations {
-        margin-left: 70px;
-    }
-
-    #about-us {
-        margin-left: 70px;
-    }
-
 }
 
 
@@ -291,7 +285,7 @@ footer {
     }
 
     header {
-        height: 6.25rem;
+        height: 10.25rem;
     }
 
     .central-pic {
@@ -301,22 +295,38 @@ footer {
     .right-pic {
         margin-top: 3.125rem;
     }
-    
-    nav {
+
+    #nav-list {
+        text-decoration: none;
+       
+
+        
+    }
+/*trying to action single li elements with the id and it works!!!*/
+    /*#get-in-touch {
+        text-decoration: none;
         position: absolute;
-        top: 0%;
-        padding-right: 200px;
+        top: 100px;
+        left: 230px;
+        font-size: small;
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    #destinations {
+        text-decoration: none;
+        position: absolute;
+        top: 120px;
+        left: 180px;
+        font-size: small;
     }
 
-
-    
-
+    #about-us {
+        text-decoration: none;
+        position: absolute;
+        top: 140px;
+        left: 190px;
+        font-size: small;
+    }
+*/
 }
 
 
